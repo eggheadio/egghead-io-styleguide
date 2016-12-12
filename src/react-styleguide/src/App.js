@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import { ButtonExamples, ButtonExampleCode, ButtonPropsTable } from './components/Buttons/Button'
 import { InputExamples, InputExampleCode, InputPropsTable } from './components/Inputs/Input'
+import { CheckboxExamples, CheckboxExampleCode,
+         CheckboxPropsTable } from './components/Checkboxes/Checkboxes'
+import { RadioButtonGroupExamples, RadioButtonGroupExampleCode,
+         RadioButtonGroupPropsTable } from './components/Radios/Radio'
 import CodeBlock from './components/GuideElements/CodeBlock'
 import PropTable from './components/GuideElements/PropTable'
 import './assets/stylesheets/build.css'
@@ -17,10 +21,24 @@ const GuideBlocks = [
     component: <InputExamples />,
     exampleCode: InputExampleCode,
     propRows: InputPropsTable
-  }
+  },
+  {
+    title: 'Checkboxes',
+    component: <CheckboxExamples />,
+    exampleCode: CheckboxExampleCode,
+    propRows: CheckboxPropsTable
+  },
+  {
+    title: 'Radio Button Group',
+    component: <RadioButtonGroupExamples />,
+    exampleCode: RadioButtonGroupExampleCode,
+    propRows: RadioButtonGroupPropsTable
+  },
+  
 ]
 
 class App extends Component {
+
   render() {
     const GuideBlock = ({title, component, exampleCode, propRows}) => {
       return (
