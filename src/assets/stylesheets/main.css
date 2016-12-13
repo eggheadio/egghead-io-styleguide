@@ -11,9 +11,8 @@
 /* 2. Shared */
 @import '_shared/_buttons.css';
 @import '_shared/_forms.css';
-/*@import '_shared/_select-box.css';*/
 
 /* 3. Components */
-@import '_components/_card-course.css';
+@import '_components/_cards.css';
 
 
