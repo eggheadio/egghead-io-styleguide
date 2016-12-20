@@ -47,7 +47,7 @@ View [the storybook](https://ui.egghead.io) for visual examples and full API doc
 - `src/index.js` imports all `src/components` and exports component library for npm.
 - Submit pull requests:
   - Runs continuous integration in Codeship to ensure builds succeed
-  - Joel reviews and merges
+  - Somebody reviews and you merge when approved
   - Continuous deployment runs in Codeship
     - Publishes the latest component library version to npm.
-    - Deploys the latest storybook to [ui.egghead.io](https://ui.egghead.io).
+    - Deploys the latest storybook to [ui.egghead.io](https://styleguide.egghead.io).
