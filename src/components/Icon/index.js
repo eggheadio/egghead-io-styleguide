@@ -18,12 +18,12 @@ export const types = {
   'remove': 'minus-circle',
   'question': 'question-circle',
   'menu': 'bars',
-  'step-incomplete': 'square-o',
-  'step-complete': 'check-square-o',
+  'box': 'square-o',
+  'box-check': 'check-square-o',
   'close': 'close',
-  'more-info': 'info-circle',
-  'subscriber-minutes': 'clock-o',
-  'revenue': 'money',
+  'info': 'info-circle',
+  'clock': 'clock-o',
+  'dollar': 'money',
   'course': 'folder-open-o',
   'lesson': 'file-o'
 }

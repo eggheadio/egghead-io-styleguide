@@ -32,28 +32,28 @@ storiesOf('Icons')
     <Icon type='menu' />
   ))
 
-  .addWithInfo('Step Incomplete', () => (
-    <Icon type='step-incomplete' />
+  .addWithInfo('Box', () => (
+    <Icon type='box' />
   ))
 
-  .addWithInfo('Step Complete', () => (
-    <Icon type='step-complete' />
+  .addWithInfo('Box (Checked)', () => (
+    <Icon type='box-check' />
   ))
 
   .addWithInfo('Close', () => (
     <Icon type='close' />
   ))
 
-  .addWithInfo('More Info', () => (
-    <Icon type='more-info' />
+  .addWithInfo('Info', () => (
+    <Icon type='info' />
   ))
 
-  .addWithInfo('Subscriber Minutes', () => (
-    <Icon type='subscriber-minutes' />
+  .addWithInfo('Clock', () => (
+    <Icon type='clock' />
   ))
 
-  .addWithInfo('Revenue', () => (
-    <Icon type='revenue' />
+  .addWithInfo('Dollar', () => (
+    <Icon type='dollar' />
   ))
 
   .addWithInfo('Course', () => (
