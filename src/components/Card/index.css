@@ -1,31 +1,60 @@
+/* Move to the general styles override */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:root {
+  --navy: #1b1f24;
+  --light-navy: #292f36;
+  --dark-gray: #434b56;
+  --gray: #646e7b;
+  --light-gray: #d1d2d3;
+  --yellow: #ffce51;
+  --orange: #f59e33;
+  --dark-orange: #df6941;
+  --tag-orange: #fef3e7;
+  --dark-blue: #0064af;
+  --blue: #009dcf;
+  --tag-blue: #edf0ff;
+  --dark-green: #3ab66e;
+  --green: #add960;
+  --turquoise: #42c2b3;
+  --tag-turquoise: #d9f3f0;
+  --dark-red: #8f1233;
+  --red: #e13f58;
+}
+
 .card-course,
-.card-lesson {
+.card-lesson,
+.card-playlist {
   padding-bottom: 10px;
   max-width: 380px;
 }
-.card-course:before,
-.card-course:after {
+.card:before,
+.card:after {
   content: '';
   position: absolute;
   display: block;
   height: 10px;
   border-radius: 5px;
 }
-.card-course:before {
+.card:before {
   bottom: 5px;
   left: 9px;
   right: 9px;
   background: var(--gray);
   z-index: 1;
 }
-.card-course:after {
+.card:after {
   bottom: 0px;
   left: 18px;
   right: 18px;
   background: var(--dark-gray);
   z-index: 0;
 }
-.card-course:hover .card-play-btn {
+.card:hover .card-play-btn {
   opacity: 1;
   transform: scale(1);
 }
@@ -42,4 +71,33 @@
   font-size: 20px;
   opacity: 0;
   transition: 150ms;
+}
+
+/* Card Progress List */
+.card-progress-list li {
+  line-height: 20px;
+}
+.card-progress-list li:before,
+.card-progress-list li:after {
+  content: '';
+  position: absolute;
+}
+.card-progress-list li:before {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: 1px solid var(--gray);
+  background: var(--tag-blue);
+  box-shadow: 0 0 0 1px var(--tag-blue);
+  left: 0;
+  top: calc(50% - 5px);
+  z-index: 1;
+}
+.card-progress-list li:after {
+  width: 1px;
+  height: 100%;
+  border-radius: 50%;
+  background: var(--gray);
+  left: 4px;
+  top: 50%;
 }
