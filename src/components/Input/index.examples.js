@@ -2,7 +2,7 @@ import React from 'react'
 import {keys} from 'lodash'
 import {storiesOf} from '@kadira/storybook'
 import Input from './index'
-import { PasswordTooltip } from '../Tooltip'
+import PasswordTooltip from '../Tooltip/PasswordTooltip'
 
 const decoratorClasses = 'flex flex-column content-center justify-around flex-wrap items-center vh-100 bg-navy'
 
