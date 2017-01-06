@@ -1,7 +1,8 @@
 import React from 'react'
 import {storiesOf} from '@kadira/storybook'
 import {nameFixture, avatarImageUrlFixture} from '../../utils/Fixtures'
-import Tooltip, { PasswordTooltip } from '.'
+import Tooltip from '.'
+import PasswordTooltip from './PasswordTooltip'
 
 const decoratorClasses = 'flex flex-column content-center justify-around flex-wrap items-center vh-100 bg-navy'
 
