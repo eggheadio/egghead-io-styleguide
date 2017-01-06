@@ -17,6 +17,6 @@ storiesOf('Tooltip')
   .addDecorator((story) => (<div className={decoratorClasses}>{story()}</div>))
   .addWithInfo('Password Tooltip', () => (
     <div className='w-50 center'>
-      <PasswordTooltip />
+      <PasswordTooltip strength={50} />
     </div>
   ))

@@ -1,12 +1,23 @@
 import React from 'react'
 import Tooltip from '.'
 
+const passStrengthValues = [10, 20, 25, 30, 33, 34, 40, 50, 60, 70, 75, 80, 90, 100]
+
+const getPasswordDescription = (pwd) => {
+  if (0 < pwd && pwd < 50) {
+    return 'Weak'
+  }
+
+  if (50 <= pwd && pwd < 90) {
+    return 'Good'
+  }
+
+  return 'Strong'
+}
+
 const PassStrength = ({strength}) => {
-  // Strength Values (tachyon widths): 10, 20, 25, 30, 33, 34, 40, 50, 60, 70, 75, 80, 90, 100
-  // TODO: Map strength value to a word (e.g. "Weak", "Good", "Strong")
-  // TODO: Map strength value to appropriate width
   const width = `w-${strength}`
-  const sWord = 'Good'
+  const sWord = getPasswordDescription(strength)
 
   return (
     <div>
@@ -20,10 +31,10 @@ const PassStrength = ({strength}) => {
   )
 }
 PassStrength.propTypes = {
-  strength: React.PropTypes.number.isRequired
+  strength: React.PropTypes.oneOf(passStrengthValues).required
 }
 
-const PasswordTooltip = () => {
+const PasswordTooltip = ({strength}) => {
     const passMsg = (
       <div className='f6 lh-copy'>
         Use at least 8 characters. Don’t use a password from another site, or something too obvious
@@ -32,11 +43,14 @@ const PasswordTooltip = () => {
     )
 
   return (
-    <Tooltip>
-      <PassStrength strength={60} />
+    <Tooltip strength={strength}>
+      <PassStrength strength={strength} />
       {passMsg}
     </Tooltip>
   )
+}
+PasswordTooltip.propTypes = {
+  strength: React.PropTypes.number.isRequired
 }
 
 export default PasswordTooltip
