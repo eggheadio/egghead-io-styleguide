@@ -96,9 +96,6 @@
 .card-progress-list-item {
   transition: 150ms;
 }
-.card-progress-list-item:hover .lesson-title {
-  font-weight: 500;
-}
 .card-progress-list-item:before,
 .card-progress-list-item:after {
   content: '';
