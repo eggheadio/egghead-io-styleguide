@@ -3,10 +3,10 @@ import {storiesOf} from '@kadira/storybook'
 //import Card from '.'
 import './index.css'
 
-import imgCourseCard from './temp/img-course-card.png'
-import imgRx from './temp/rx.svg'
-import imgAngular from './temp/angular.svg'
-import imgJs from './temp/js.svg'
+import imgCourseCard from './assets/temp/img-course-card.png'
+import imgRx from './assets/temp/rx.svg'
+import imgAngular from './assets/temp/angular.svg'
+import imgJs from './assets/temp/js.svg'
 
 const representClasses = 'flex justify-center items-center bg-dark-navy pv5'
 
