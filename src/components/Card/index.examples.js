@@ -53,74 +53,76 @@ storiesOf('Static: Cards')
   .addWithInfo('Playlist Card', () => (
     <div className={representClasses}>
 
-      <div className='relative card card-stacked-shadow card-playlist'>
-        <div className='flex flex-column items-center overflow-hidden br2 pb4 bg-white navy pointer relative z-1 card-course-inner'>
-          <div className='fa fa-play absolute z-1 black-70 bg-white-60 items-center justify-center br-pill card-play-btn'></div>
-          <div className='pr3 pt3 bg-tag-gray self-stretch overflow-y-scroll'
-               style={{
-                 height: '290px'
-               }}>
-            <ul className='list pa0 ma0 overflow-hidden card-progress-list'>
-              <li className='flex items-start relative f6 lh-solid pv3 pl4 pr3 gray hover-bg-white card-progress-list-item viewed'>
-                <img src={imgRx} className='ml2 mt1' alt=''/>
-                <div className='ml2 flex flex-grow-1 lh-copy o-60 lesson-title'>
-                  <div>Pick Up Angular 2 in 6 Minutes Pick Up Angular 2 in 6 Minutes</div>
-                  <div className='w3 ml3 tr o-60'>02:22</div>
-                </div>
-              </li>
-              <li className='flex items-start relative f6 lh-solid pv3 pl4 pr3 gray hover-bg-white card-progress-list-item viewed'>
-                <img src={imgAngular} className='ml2 mt1' alt=''/>
-                <div className='ml2 flex flex-grow-1 lh-copy o-60 lesson-title'>
-                  <div>Checking Model Validation in Angular 2</div>
-                  <div className='w3 ml3 tr o-60'>22:00</div>
-                </div>
-              </li>
-              <li className='flex items-start relative f6 lh-solid pv3 pl4 pr3 gray hover-bg-white card-progress-list-item next'>
-                <img src={imgJs} className='ml2 mt1' alt=''/>
-                <div className='ml2 flex flex-grow-1 lh-copy lesson-title'>
-                  <div>Understand the Angular States of Model Validation in Angular 2</div>
-                  <div className='w3 ml3 tr o-60'>04:17</div>
-                </div>
-              </li>
-              <li className='flex items-start relative f6 lh-solid pv3 pl4 pr3 gray hover-bg-white card-progress-list-item'>
-                <img src={imgRx} className='ml2 mt1' alt=''/>
-                <div className='ml2 flex flex-grow-1 lh-copy lesson-title'>
-                  <div>Sync Requests with RxJS and Angular</div>
-                  <div className='w3 ml3 tr o-60'>31:41</div>
-                </div>
-              </li>
-              <li className='flex items-start relative f6 lh-solid pv3 pl4 pr3 gray hover-bg-white card-progress-list-item'>
-                <img src={imgAngular} className='ml2 mt1' alt=''/>
-                <div className='ml2 flex flex-grow-1 lh-copy lesson-title'>
-                  <div>Sync Requests with RxJS and Angular</div>
-                  <div className='w3 ml3 tr o-60'>22:22</div>
-                </div>
-              </li>
-              <li className='flex items-start relative f6 lh-solid pv3 pl4 pr3 gray hover-bg-white card-progress-list-item viewed'>
-                <img src={imgJs} className='ml2 mt1' alt=''/>
-                <div className='ml2 flex flex-grow-1 lh-copy lesson-title'>
-                  <div>Understand the Angular 2 States of</div>
-                  <div className='w3 ml3 tr o-60'>22:22</div>
-                </div>
-              </li>
-              <li className='flex items-start relative f6 lh-solid pv3 pl4 pr3 gray hover-bg-white card-progress-list-item'>
-                <img src={imgRx} className='ml2 mt1' alt=''/>
-                <div className='ml2 flex flex-grow-1 lh-copy lesson-title'>
-                  <div>Sync Requests with RxJS and Angular</div>
-                  <div className='w3 ml3 tr o-60'>22:22</div>
-                </div>
-              </li>
-              <li className='flex items-start relative f6 lh-solid pv3 pl4 pr3 gray hover-bg-white card-progress-list-item'>
-                <img src={imgAngular} className='ml2 mt1' alt=''/>
-                <div className='ml2 flex flex-grow-1 lh-copy lesson-title'>
-                  <div>Sync Requests with RxJS and Angular</div>
-                  <div className='w3 ml3 tr o-60'>22:22</div>
-                </div>
-              </li>
-            </ul>
+      <div className='relative card card-stacked-shadow sans-serif card-playlist'>
+        <div className='flex flex-column items-center br2 bg-white navy relative z-1 card-course-inner'>
+          <div className='relative' style={{
+            height: '290px'
+          }}>
+            <div className='fa fa-play w3 h3 f3 absolute z-1 gray hover-turquoise bg-white items-center justify-center br-pill pointer card-play-btn'></div>
+            <div className='pr3 pt3 bg-tag-gray self-stretch h-100 br2 overflow-y-scroll'>
+              <ul className='list pa0 ma0 overflow-hidden card-progress-list'>
+                <li className='flex items-start relative f6 lh-solid pv3 pl4 pr3 gray hover-bg-white card-progress-list-item viewed'>
+                  <img src={imgRx} className='ml2 mt1' alt=''/>
+                  <div className='ml2 flex flex-grow-1 lh-copy o-60 lesson-title'>
+                    <div>Pick Up Angular 2 in 6 Minutes Pick Up Angular 2 in 6 Minutes</div>
+                    <div className='w3 ml3 tr o-60'>02:22</div>
+                  </div>
+                </li>
+                <li className='flex items-start relative f6 lh-solid pv3 pl4 pr3 gray hover-bg-white card-progress-list-item viewed'>
+                  <img src={imgAngular} className='ml2 mt1' alt=''/>
+                  <div className='ml2 flex flex-grow-1 lh-copy o-60 lesson-title'>
+                    <div>Checking Model Validation in Angular 2</div>
+                    <div className='w3 ml3 tr o-60'>22:00</div>
+                  </div>
+                </li>
+                <li className='flex items-start relative f6 lh-solid pv3 pl4 pr3 gray hover-bg-white card-progress-list-item next'>
+                  <img src={imgJs} className='ml2 mt1' alt=''/>
+                  <div className='ml2 flex flex-grow-1 lh-copy lesson-title'>
+                    <div>Understand the Angular States of Model Validation in Angular 2</div>
+                    <div className='w3 ml3 tr o-60'>04:17</div>
+                  </div>
+                </li>
+                <li className='flex items-start relative f6 lh-solid pv3 pl4 pr3 gray hover-bg-white card-progress-list-item'>
+                  <img src={imgRx} className='ml2 mt1' alt=''/>
+                  <div className='ml2 flex flex-grow-1 lh-copy lesson-title'>
+                    <div>Sync Requests with RxJS and Angular</div>
+                    <div className='w3 ml3 tr o-60'>31:41</div>
+                  </div>
+                </li>
+                <li className='flex items-start relative f6 lh-solid pv3 pl4 pr3 gray hover-bg-white card-progress-list-item'>
+                  <img src={imgAngular} className='ml2 mt1' alt=''/>
+                  <div className='ml2 flex flex-grow-1 lh-copy lesson-title'>
+                    <div>Sync Requests with RxJS and Angular</div>
+                    <div className='w3 ml3 tr o-60'>22:22</div>
+                  </div>
+                </li>
+                <li className='flex items-start relative f6 lh-solid pv3 pl4 pr3 gray hover-bg-white card-progress-list-item viewed'>
+                  <img src={imgJs} className='ml2 mt1' alt=''/>
+                  <div className='ml2 flex flex-grow-1 lh-copy lesson-title'>
+                    <div>Understand the Angular 2 States of</div>
+                    <div className='w3 ml3 tr o-60'>22:22</div>
+                  </div>
+                </li>
+                <li className='flex items-start relative f6 lh-solid pv3 pl4 pr3 gray hover-bg-white card-progress-list-item'>
+                  <img src={imgRx} className='ml2 mt1' alt=''/>
+                  <div className='ml2 flex flex-grow-1 lh-copy lesson-title'>
+                    <div>Sync Requests with RxJS and Angular</div>
+                    <div className='w3 ml3 tr o-60'>22:22</div>
+                  </div>
+                </li>
+                <li className='flex items-start relative f6 lh-solid pv3 pl4 pr3 gray hover-bg-white card-progress-list-item'>
+                  <img src={imgAngular} className='ml2 mt1' alt=''/>
+                  <div className='ml2 flex flex-grow-1 lh-copy lesson-title'>
+                    <div>Sync Requests with RxJS and Angular</div>
+                    <div className='w3 ml3 tr o-60'>22:22</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div className='ph4'>
-            <h3 className='f3 tc mt4 mb2 avenir fw5'>Introduction to RxJS Marble Testing Two lines headline</h3>
+          <div className='ph4 pt5 pb4'>
+            <div className='tc f6 lh-title light-gray'>14:34 to go (4 more lessons)</div>
+            <h3 className='f3 tc mt3 mb2 fw5 lh-copy'>Introduction to RxJS Marble Testing Two lines headline</h3>
             <div className='f6 dark-gray o-50 mb4 tc'>Joe Maddalone</div>
             <div className='flex justify-between self-stretch items-center'>
               <div className='f6 dark-gray o-50'>12 lessons</div>

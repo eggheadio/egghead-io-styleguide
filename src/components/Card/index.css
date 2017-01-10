@@ -36,41 +36,28 @@
 }
 
 /* Course Card */
-.card-course:hover .card-play-btn {
-  opacity: 1;
-  transform: scale(1);
-}
-.card-play-btn {
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.17);
-  left: 50%;
-  top: 50%;
-  margin-left: -30px;
-  margin-top: -30px;
-  transform: scale(0.5);
-  display: flex;
-  font-size: 20px;
-  opacity: 0;
-  transition: 150ms;
-}
 
 /* Lesson Card */
 
 /* Playlist Card */
 .card-playlist .card-progress-list-item.viewed:before {
-  border: 1px solid var(--dark-green);
-  background: var(--dark-green);
+  border: 1px solid var(--turquoise);
+  background: var(--turquoise);
 }
 .card-playlist .card-progress-list-item.viewed:after {
-  background: var(--dark-green);
+  background: var(--turquoise);
 }
 .card-playlist .card-progress-list-item.next:before {
-  border-color: transparent transparent transparent var(--dark-green);
+  border-color: transparent transparent transparent var(--turquoise);
   box-shadow: 0 0 0 10px var(--tag-gray);
   background: var(--tag-gray);
 }
 .card-playlist .card-progress-list-item.next:hover:before {
   box-shadow: 0 0 0 10px var(--white);
   background: var(--white);
+}
+.card-playlist .card-play-btn {
+  bottom: -2.5rem;
 }
 
 
@@ -156,4 +143,17 @@
   border-style: solid;
   border-width: 6px 0px 6px 9px;
   border-color: transparent transparent transparent var(--orange);
+}
+
+/* Card Play Button */
+.card-play-btn {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.17);
+  left: 50%;
+  margin-left: -34px;
+  display: flex;
+  transition: 150ms;
+}
+.card-play-btn:before {
+  position: relative;
+  left: 3px;
 }
