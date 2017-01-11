@@ -16,7 +16,7 @@ storiesOf('Static: Cards')
 
       <div className='relative card card-stacked-shadow card-course'>
         <div className='flex flex-column items-center overflow-hidden br2 pa4 bg-white navy pointer relative z-1 card-course-inner'>
-          <div className='fa fa-play absolute w3 h3 z-1 black-70 bg-white-60 items-center justify-center br-pill card-play-btn'></div>
+          <div className='fa fa-play w3 h3 f3 absolute z-1 gray bg-white-70 o-0 items-center justify-center br-pill pointer card-play-btn'></div>
           <div className='mw5 mt3 center ph3'>
             <img alt='' src={imgCourseCard}/>
           </div>

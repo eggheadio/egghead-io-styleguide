@@ -36,6 +36,13 @@
 }
 
 /* Course Card */
+.card-course .card-play-btn {
+  top: 50%;
+  margin-top: -2rem;
+}
+.card-course:hover .card-play-btn {
+  opacity: 1;
+}
 
 /* Lesson Card */
 .card-lesson .card-play-btn {
