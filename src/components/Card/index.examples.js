@@ -126,7 +126,11 @@ storiesOf('Static: Cards')
             <div className='f6 dark-gray o-50 mb4 tc'>Joe Maddalone</div>
             <div className='flex justify-between self-stretch items-center'>
               <div className='flex flex-column items-center'>
-                <div className='f6 dark-gray o-50'>12 lessons</div>
+                <div className='f6 dark-gray o-50'>
+                  <span className='dark-green'>7</span>
+                  <span className='mh1'>/</span>
+                  <span>12 lessons</span>
+                </div>
                 <div className='w4 br1 bg-tag-turquoise mt1 overflow-hidden'>
                   <div className='pt1 bg-turquoise' style={{
                     width: '58%'
