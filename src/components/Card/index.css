@@ -38,6 +38,13 @@
 /* Course Card */
 
 /* Lesson Card */
+.card-lesson .card-play-btn {
+  top: 50%;
+  margin-top: -2rem;
+}
+.card-lesson:hover .card-play-btn {
+  opacity: 1;
+}
 
 /* Playlist Card */
 .card-playlist .card-progress-list-item.viewed:before {
