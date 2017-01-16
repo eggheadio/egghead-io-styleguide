@@ -133,6 +133,10 @@
   top: 22px;
   z-index: 2;
 }
+.card-progress-list-item:hover:before {
+  background: var(--white);
+  box-shadow: 0 0 0 1px var(--white);
+}
 .card-progress-list-item.viewed {
   color: var(--gray); /* could be applied to markup as Tachyons class */
 }
