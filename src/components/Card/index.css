@@ -38,23 +38,34 @@
   max-width: 760px;
 }
 
-/* Course Card */
-.card-course .card-play-btn {
-  top: 50%;
+/* Card Play Button */
+.card-play-btn {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.17);
+  left: 50%;
+  margin-left: -34px;
   margin-top: -2rem;
+  display: flex;
+  transition: 150ms;
 }
+.card-play-btn:before {
+  position: relative;
+  left: 3px;
+}
+.card-play-btn.card-play-btn-centered {
+  top: 50%;
+  bottom: auto;
+}
+
+.card-type-label {
+  font-size: 12px;
+}
+
+/* Course Card */
 .card-course:hover .card-play-btn {
   opacity: 1;
 }
-.card-course .card-progress-list-item {
-  
-}
 
 /* Lesson Card */
-.card-lesson .card-play-btn {
-  top: 50%;
-  margin-top: -2rem;
-}
 .card-lesson:hover .card-play-btn {
   opacity: 1;
 }
@@ -168,17 +179,4 @@
   border-style: solid;
   border-width: 6px 0px 6px 9px;
   border-color: transparent transparent transparent var(--orange);
-}
-
-/* Card Play Button */
-.card-play-btn {
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.17);
-  left: 50%;
-  margin-left: -34px;
-  display: flex;
-  transition: 150ms;
-}
-.card-play-btn:before {
-  position: relative;
-  left: 3px;
 }
