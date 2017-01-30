@@ -96,10 +96,10 @@ storiesOf('Static: Cards')
             <div className='orange lh-title ttu fw6 ph3 pv1 br-pill bg-tag-orange tracked card-type-label'>course</div>
           </div>
         </div>
-        <div className='relative w-100 z-1 overflow-hidden pv3 br2 br--bottom bg-tag-gray' style={{
+        <div className='flex flex-column relative w-100 z-1 overflow-hidden pv3 br2 br--bottom bg-tag-gray' style={{
           height: '290px'
         }}>
-          <div className='pr3 self-stretch h-100 overflow-y-scroll'>
+          <div className='flex-grow-1 pr3 self-stretch h-100 overflow-y-scroll'>
             <ul className='list pa0 ma0 overflow-hidden card-progress-list'>
               <li className='flex items-start relative f6 lh-solid pointer pv3 pl4 pr3 gray hover-bg-white card-progress-list-item viewed'>
                 <img src={imgRx} className='ml2 mt1' alt=''/>
@@ -184,11 +184,11 @@ storiesOf('Static: Cards')
             <div className='orange lh-title ttu fw6 ph3 pv1 br-pill bg-tag-orange tracked card-type-label'>course</div>
           </div>
         </div>
-        <div className='relative w-100 z-1 overflow-hidden pv3 br2 br--right bg-tag-gray' style={{
+        <div className='flex flex-column relative w-100 z-1 overflow-hidden pv3 br2 br--right bg-tag-gray' style={{
           height: 'auto',
           maxHeight: '485px'
         }}>
-          <div className='pr3 self-stretch h-100 overflow-y-scroll'>
+          <div className='flex-grow-1 pr3 self-stretch h-100 overflow-y-scroll'>
             <ul className='list pa0 ma0 overflow-hidden card-progress-list'>
               <li className='flex items-start relative f6 lh-solid pointer pv3 pl4 pr3 gray hover-bg-white card-progress-list-item viewed'>
                 <img src={imgRx} className='ml2 mt1' alt=''/>
@@ -298,11 +298,11 @@ storiesOf('Static: Cards')
 
       <div className='relative card card-stacked-shadow sans-serif card-playlist'>
         <div className='flex flex-column items-center br2 bg-white navy relative z-1 card-course-inner'>
-          <div className='relative w-100 z-1 pv3 br2 br--top bg-tag-gray' style={{
+          <div className='flex flex-column relative w-100 z-1 pv3 br2 br--top bg-tag-gray' style={{
             height: '290px'
           }}>
             <a href='/' className='no-underline fa fa-play w3 h3 f3 absolute z-1 gray hover-turquoise bg-white items-center justify-center br-pill pointer grow-large card-play-btn'></a>
-            <div className='pr3 self-stretch h-100 overflow-y-scroll'>
+            <div className='flex-grow-1 pr3 self-stretch h-100 overflow-y-scroll'>
               <ul className='list pa0 ma0 overflow-hidden card-progress-list'>
                 <li className='flex items-start relative f6 lh-solid pointer pv3 pl4 pr3 gray hover-bg-white card-progress-list-item viewed'>
                   <img src={imgRx} className='ml2 mt1' alt=''/>
