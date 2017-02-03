@@ -22,21 +22,27 @@
   --red: #e13f58;
 }
 
-.categories-items-holder {
-  column-count: 4;
-  column-gap: 1px;
+.categories-switchers-holder {
+  background: #1f2329; /* decide what to do with this color - it is absent in our palette  */
 }
-.category-item {
-  break-inside: avoid;
-  height: 6rem;
+.categories-items-holder {
+  background: #22272d; /* decide what to do with this color - it is absent in our palette  */
+}
+@media screen and (min-width: 30em) {
+  .category-item {
+    height: 6rem;
+  }
+  .category-item.expanded {
+    height: 12rem;
+  }
 }
 .category-item:hover {
-  background: #1e2228; /* decide what to do with this color - it is absent in our palette  */
-}
-.category-item.expanded {
-  height: 12rem;
+  background: #1f2329; /* decide what to do with this color - it is absent in our palette  */
 }
 .category-item:hover .category-item-counter {
-  background: #36312c;
+  background: #36312c; /* decide what to do with this color - it is absent in our palette  */
   color: var(--dark-orange);
+}
+.categories-item-description {
+  margin-top: -1px;
 }
